@@ -1,0 +1,15 @@
+package calcAreaShape;
+
+public class shapeArea {
+	public int area(int l,int b) {
+		return l*b;
+		
+	}
+	public int area(int s) {
+		return s*s;
+	}
+	public double area(double r) {
+		return 3.141*r*r;
+	}
+
+}

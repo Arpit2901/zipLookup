@@ -1,0 +1,22 @@
+package calcAreaShape;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the length breadth and radius");
+		int l,b;
+		double r;
+		l=sc.nextInt();
+		b=sc.nextInt();
+		r=sc.nextDouble();
+		shapeArea obj= new shapeArea();
+//		shapeArea obj= new shapeArea(l,b);
+//		obj.shapeArea(r);
+//		obj.shapeArea(l,b);
+//		obj.shapeArea(l);
+	}
+
+}

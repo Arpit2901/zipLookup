@@ -1,0 +1,13 @@
+package interestCalci;
+
+public class calculateInterest {
+	private int r,t,age,in;
+	private long p;
+	private char gender;
+	
+	
+	public void calSI() {
+		int i=(p*r*t)/100;
+	}
+
+}

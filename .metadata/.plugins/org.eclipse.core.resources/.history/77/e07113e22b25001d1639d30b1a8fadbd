@@ -1,0 +1,8 @@
+package shape;
+
+public class circle extends shapes{
+	public void carea(double r) {
+		
+		System.out.println("the area of circle is "+ 3.14*r*r);
+	}
+}

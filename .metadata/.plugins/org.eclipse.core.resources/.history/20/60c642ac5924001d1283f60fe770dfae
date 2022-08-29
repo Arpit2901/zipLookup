@@ -1,0 +1,15 @@
+package calcAreaShape;
+
+public class shapeArea {
+	public void area(int l,int b) {
+		System.out.println("th area of rectangle"+ l*b);
+		
+	}
+	public void area(int s) {
+		System.out.println("th area of square"+ s*s);
+	}
+	public void area(double r) {
+		System.out.println("th area of circle"+3.141*r*r);
+	}
+
+}

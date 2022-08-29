@@ -1,0 +1,8 @@
+package shape;
+
+public class square extends shapes {
+	public void area(int s) {
+		System.out.println("the area of square is"+s*s);
+		
+	}
+}

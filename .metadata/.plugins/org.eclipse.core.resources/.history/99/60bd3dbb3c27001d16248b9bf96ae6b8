@@ -1,0 +1,14 @@
+package assessment1;
+
+public class fountainpen {
+	void write() {
+		System.out.print("Write function");
+	}
+	void refill() {
+		System.out.print("refill");
+	}
+	void changeNib() {
+		System.out.print("Changing Nib");
+	}
+
+}

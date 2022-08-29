@@ -1,0 +1,8 @@
+package assessment1;
+
+public class fountainpen {
+	void write() {
+		System.out.print("Write function");
+	}
+
+}
