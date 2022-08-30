@@ -1,5 +1,10 @@
 package q3;
 
-public class telephone {
-
+abstract class telephone {
+	abstract void lift(); {
+		System.out.println("lift telephone");
+	}
+	abstract void disconnected(); {
+		System.out.println("disconect telephone");
+	}
 }
