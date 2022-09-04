@@ -1,7 +1,0 @@
-package shape;
-
-public class shapes {
-	public void carea();
-	public void area();
-
-}

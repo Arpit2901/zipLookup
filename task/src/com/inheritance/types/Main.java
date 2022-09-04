@@ -6,8 +6,11 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner (System.in);
+		System.out.println("enter eid");
 		int eid=sc.nextInt();
+		System.out.println("enter salary");
 		int salary=sc.nextInt();
+		System.out.println("enter comapany ,age ,name ,address");
 		String company=sc.next();
 		int age=sc.nextInt();
 		String name=sc.next();
