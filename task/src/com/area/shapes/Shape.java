@@ -6,11 +6,19 @@ public class Shape {
 	public Shape(String shapeName) {
 		super();
 		this.shapeName = shapeName;
-		calculateArea();
+//		calculateArea();
 	}
 	
+	public String getShapeName() {
+		return shapeName;
+	}
+
+	public void setShapeName(String shapeName) {
+		this.shapeName = shapeName;
+	}
+
 	public Double calculateArea(){
-//		System.out.println("in paret class");
+//		System.out.println("in parent class");
 		return 0.0;
 	}
 	}

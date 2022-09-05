@@ -29,6 +29,13 @@ public class Main {
 			Shape obj3=new Circle(name,r);
 			System.out.println(obj3.calculateArea());	
 			break;
+		case "Hexagon":
+			System.out.println("enter the side ");
+			int s =sc.nextInt();
+			Shape obj4=new Hexagon(name,s);
+			System.out.println(obj4.calculateArea());	
+			break;
+			
 		default:
 			System.out.println("wrong choice ");
 			}
