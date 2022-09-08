@@ -1,6 +1,6 @@
 package com.books.record;
 
-public class Books {
+public class Books implements Comparable<Books>{
 		int bId;
 	    String bookName;
 	    double price;
@@ -43,21 +43,22 @@ public class Books {
 	    public void setPrice(double price) {
 	        this.price = price;
 	    }
-		public Double compareTo(Books b) {
-			
-			int compareQuantity = ((Books) b).getPrice(); 
-			
-			//ascending order
-			return this.price - compareQuantity;
-			
-			//descending order
-			//return compareQuantity - this.quantity;
-			
-		}
+	
 	    
 	    public void display() {
 	        System.out.println(" | Book Id = " + bId + " | Book Name = " + bookName + " | Book Price = " + price + " |" + " | Date = " + date + " |");
 
 	   }
+		@Override
+		public int compareTo(Books o) {
+			// TODO Auto-generated method stub
+			if(this.price>o.price)return 1;
+			else if(this.price<o.price)return -1;
+			return 0;
+		}
+		@Override
+		public String toString() {
+			return "Books [bId=" + bId + ", bookName=" + bookName + ", price=" + price + ", date=" + date + "]";
+		}
 
 }
