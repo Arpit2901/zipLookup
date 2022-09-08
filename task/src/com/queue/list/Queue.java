@@ -1,21 +1,21 @@
-package com.stack.list;
+package com.queue.list;
 
 import java.util.Scanner;
 
 import com.linked.list.Node;
 
-public class Stack {
+public class Queue {
 	private Node head;
 	private Node last;
 	private Node top;
 	
-	public Stack() {
+	public Queue() {
 		head=null;
 		last=null;
 		top=null;
 	}
 	Scanner sc=new Scanner(System.in);
-	public void push() {
+	public void insert() {
 		do {
 			System.out.println("Enter the data");
 			int data=sc.nextInt();
@@ -26,27 +26,29 @@ public class Stack {
 				top =node;
 			}else {
 				top=node;
-				top.setNext(last);
-//				last.setNext(node);
-				last=node;
+				top.setNext(head);
+				head=node;
 			}
-			System.out.println("pushed successfully");
+			System.out.println("inserted successfully");
 		
 		}while(false);
 	}
-		public void pop() {
+		public void delete() {
 			  if (top == null) {
-		            System.out.print("\nStack Underflow");
+		            System.out.print("\nQueue Underflow");
 		            return;
 		        }
-			  System.out.println("popped successful ="+top.getData()); 
-		        last=top.getNext();
-		        top.setNext(null);
-		        top=last;
+			  System.out.println("deleted successful ="+last.getData()); 
+			  Node current = top;
+			  while(current.getNext() != last) {    
+		            current = current.getNext();    
+		        }   
+			  current.setNext(null);
+		        last=current;
 		}
 	
 	    public void display() {      
-	        Node current = top;  
+	        Node current = head;  
 	        if(head == null) {    
 	            System.out.println("List is empty");    
 	            return;    
@@ -59,5 +61,4 @@ public class Stack {
 	        System.out.println();    
 	    
 		}
-
 }

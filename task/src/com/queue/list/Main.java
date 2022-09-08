@@ -1,33 +1,31 @@
-package com.stack.list;
+package com.queue.list;
 
 import java.util.Scanner;
 
 public class Main {
-	private static boolean b;
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		int n;
 		Scanner sc=new Scanner(System.in);
 		Main obj=new Main();
-		Stack node=new Stack();
+		Queue node=new Queue();
 		do {
-			System.out.println("Enter 1-push |2-pop |3-display from the stack");
+			System.out.println("Enter 1-insert |2-delete |3-display from the queue");
 			int choice=sc.nextInt();
 			obj.choice(choice,node);
-			System.out.println("Do you want to push or pop or display new node then true else false");
-			 b=sc.nextBoolean();
-		}while(b);
+			System.out.println("Do you want to insert or delete or display new node then 1 else 0");
+			n=sc.nextInt(); 
+		}while(n>0);
 
-		
 	}
-	public void choice(int choice,Stack node) {
+	public void choice(int choice,Queue node) {
 		switch(choice) {
 		case 1:
-			node.push();
+			node.insert();
 			node.display();
 			break;
 		case 2:
-			node.pop();
+			node.delete();
 			break;
 		case 3:
 			node.display();
