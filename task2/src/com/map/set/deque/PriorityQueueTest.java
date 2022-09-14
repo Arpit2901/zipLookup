@@ -9,9 +9,9 @@ public class PriorityQueueTest {
 	        queue.add("Vijay");  
 	        queue.add("Karan");  
 	        queue.add("Jai");  
-	        queue.add("Rahul");  
+	        queue.add("Rahul");  	        System.out.println("head:"+queue.element());  
+
 	        
-	        System.out.println("head:"+queue.element());  
 	        System.out.println("head:"+queue.peek());  
 	        
 	        System.out.println("iterating the queue elements:");  
