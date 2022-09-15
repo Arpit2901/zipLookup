@@ -7,7 +7,6 @@ public class AgeMain {
 	     CheckingAge test = new CheckingAge();
 	       
 	        test.check();
-	      
 	}
 
 }
