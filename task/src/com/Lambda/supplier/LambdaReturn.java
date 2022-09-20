@@ -5,6 +5,6 @@ public class LambdaReturn {
     Addable ad2=(int a,int b)->{  
         return (a+b);   
         };  
-System.out.println(ad2.add(100,200));  
+        System.out.println(ad2.add(100,200));  
 	}
 }
