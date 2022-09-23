@@ -1,0 +1,47 @@
+Donor details	(fk)
+id(pk)	Name	bloodG	phone	date
+1	Arpit	o+	9998723	29/9
+2	ram	a+	76689	29/8
+3	sham	b+	7070349	1/9
+4	rohan	o+	7593409	2/6
+
+Donor-health
+id	healthy	
+1	yes
+2	yes
+3	no
+4	yes
+6	no
+8	yes
+
+Blood bank
+Units collected
+	  
+Group(pk)	units	requirement
+o+		2	4
+o-		0	1
+a+		3	1
+b+		2	2
+ab+		0	1
+a-		0	1
+b-		2	3
+
+Donors History
+Last-donated
+id	donated	
+2	09/06
+2	09/9
+6	10/8
+7	29/9
+9	30/8
+
+Reciever table
+Name	City   BloodRecieved
+mohan	gzb	
+sham	delhi
+govind	lko	o+
+Rahul
+
+
+
+
