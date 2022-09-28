@@ -15,6 +15,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\arpit.verma\eclipse-workspace\JDBCusingCrud"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -38,15 +39,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="Arpit.com.bhawna"/>
-			<item value="Arpit.com.BhawnaCorp"/>
 		</list>
 		<list key="groupId">
-			<item value="Arpit"/>
 		</list>
 		<list key="artifactId">
-			<item value="com.bhawna"/>
-			<item value="com.BhawnaCorp"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -62,10 +58,12 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.bhavna.maven.demo"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="com.maven.Jdbcdemo"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
