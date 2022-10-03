@@ -15,6 +15,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\arpit.verma\eclipse-workspace\hello worls\src\Main\abc.java"/>
 			<item value="C:\Users\arpit.verma\eclipse-workspace\JDBCusingCrud\src\com\dao\crud\jdbc\Main.java"/>
 			<item value="C:\Users\arpit.verma\eclipse-workspace\JDBCusingCrud"/>
 		</list>
@@ -59,11 +60,13 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="caseStudy5"/>
 			<item value="com.demo.calculator"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="Case_Study5_Referal"/>
 			<item value="Calculator"/>
 		</list>
 		<list key="projectNameTemplate">
