@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
+org.eclipse.jdt.core.classpathVariable.ECLIPSE_HOME=C\:/Users/arpit.verma/eclipse/java-2022-06/eclipse/
 org.eclipse.jdt.core.classpathVariable.JRE_LIB=C\:/Users/arpit.verma/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416/jre/lib/jrt-fs.jar
 org.eclipse.jdt.core.classpathVariable.JRE_SRC=C\:/Users/arpit.verma/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416/jre/lib/src.zip
 org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=

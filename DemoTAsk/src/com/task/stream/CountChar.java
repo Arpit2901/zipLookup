@@ -1,14 +1,14 @@
 package com.task.stream;
 
 public class CountChar {
-	public static void main(String arg[]) {
+	public static void main(String arg[]) throws Exception {
 	
 			
 			check();
 		
 	}
 		
-	public static void check() {
+	public static void check() throws Exception {
 		try{
 		String s="";
 		s.charAt(0);
