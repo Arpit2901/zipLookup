@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\arpit.verma\Downloads\SpringBootInitialiser2"/>
+			<item value="C:\Users\arpit.verma\Downloads\SpringBootInitialiser"/>
 			<item value="arpit"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -15,14 +17,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
-			<item value="C:\Users\arpit.verma\eclipse-workspace\SpringMvcWeb"/>
-			<item value="C:\Users\arpit.verma\eclipse-workspace\DemoWebProject"/>
-			<item value="C:\Users\arpit.verma\eclipse-workspace\DemoWebappSpring\com\java\controller\WelcomeController.java"/>
-			<item value="C:\Users\arpit.verma\eclipse-workspace\SpringMvcMaven\pom.xml"/>
-			<item value="C:\Users\arpit.verma\eclipse-workspace\Demomvcspring"/>
-			<item value="C:\Users\arpit.verma\eclipse-workspace\hello worls\src\Main\abc.java"/>
-			<item value="C:\Users\arpit.verma\eclipse-workspace\JDBCusingCrud\src\com\dao\crud\jdbc\Main.java"/>
-			<item value="C:\Users\arpit.verma\eclipse-workspace\JDBCusingCrud"/>
+			<item value="C:\Users\arpit.verma\eclipse-workspace\SpringMVC22"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -46,20 +41,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.bhavna.spring.SpringMVC22"/>
-			<item value="com.bhavna.SpringMvc.SpringDemoMvc2"/>
-			<item value="com.bhavna.SpringMvc.demo3MavenSpringMvc"/>
-			<item value="com.bhavna.SpringMvc.Demo2MavenSpring"/>
 		</list>
 		<list key="groupId">
-			<item value="com.bhavna.spring"/>
-			<item value="com.bhavna.SpringMvc"/>
 		</list>
 		<list key="artifactId">
-			<item value="SpringMVC22"/>
-			<item value="SpringDemoMvc2"/>
-			<item value="demo3MavenSpringMvc"/>
-			<item value="Demo2MavenSpring"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -75,10 +60,14 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.demo.springboot"/>
+			<item value="com.hibernate.bean"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="SpringbootDemo"/>
+			<item value="JPQLHQL"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
