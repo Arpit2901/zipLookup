@@ -1,11 +1,9 @@
 package com.bhavna.model;
 
-public class address {
-private String country;
-private String state;
+public class address extends State{
+
 private String area;
 private long zipCode;
-
 
 public address(String country, String state, String area, long zipCode) {
 	super();
@@ -44,6 +42,4 @@ public long getZipCode() {
 public void setZipCode(long zipCode) {
 	this.zipCode = zipCode;
 }
-
-
 }
