@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\arpit.verma\Downloads\demoConfigServer"/>
 			<item value="C:\Users\arpit.verma\Downloads\SpringBootInitialiser2"/>
 			<item value="C:\Users\arpit.verma\Downloads\SpringBootInitialiser"/>
 			<item value="arpit"/>
