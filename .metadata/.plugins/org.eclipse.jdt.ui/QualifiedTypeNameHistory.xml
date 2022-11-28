@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.junit.jupiter.params.provider.ValueSource"/>
-    <fullyQualifiedTypeName name="org.junit.jupiter.params.provider.CsvSource"/>
-    <fullyQualifiedTypeName name="org.junit.jupiter.params.provider.CsvFileSource"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.params.ParameterizedTest"/>
     <fullyQualifiedTypeName name="main.com.bhavna.service.ArrayIndexOutOfBoundException"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
@@ -49,8 +46,6 @@
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.demo.bean.Employee"/>
     <fullyQualifiedTypeName name="com.demo.dao.EmployeeDao"/>
     <fullyQualifiedTypeName name="javax.persistence.Entity"/>
@@ -60,4 +55,9 @@
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
     <fullyQualifiedTypeName name="com.demo.SpringBootInitialiser.SpringBootInitialiserApplication"/>
     <fullyQualifiedTypeName name="com.bhavna.service.ServiceLayer"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
