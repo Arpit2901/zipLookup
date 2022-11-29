@@ -30,7 +30,11 @@ public void finder(List<Employee> l) {
      System.out.println("Based on Location: "+map);
 	
 }
-public List sort(List<Employee> l) {
-	return Collections.sort(l, (p1, p2) -> ((Employee) p1).getName().compareTo(((Employee) p2).getName()));
+public void sort(List<Employee> l) {
+	//sorting by Location
+	Collections.sort(l, (p1, p2) -> ((Employee) p1).getLocation().compareTo(((Employee) p2).getLocation()));
+//	Sorting  by Name
+	Collections.sort(l, (p1, p2) -> ((Employee) p1).getName().compareTo(((Employee) p2).getName()));
+		System.out.println(l);
 }
 }

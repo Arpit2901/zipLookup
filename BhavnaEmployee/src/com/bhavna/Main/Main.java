@@ -20,8 +20,8 @@ public class Main {
 		Employee emp=new Employee("Manan",40000 , "Ghaziabad");
 		Employee emp2=new Employee("Sharan",50000 , "Goa");
 		Employee emp3=new Employee("Raman",120000 , "pune");
-		Employee emp6=new Employee("nimit",52000 , "Hyderabad");
-		Employee emp4=new Employee("nitin",70000 , "Delhi");
+		Employee emp6=new Employee("Nimit",52000 , "Hyderabad");
+		Employee emp4=new Employee("Nitin",70000 , "Delhi");
 		Employee emp5=new Employee("Mudit",42000 , "Hyderabad");
 		list.add(emp);
 		list.add(emp2);
@@ -30,18 +30,16 @@ public class Main {
 		list.add(emp5);
 		list.add(emp6);
 		Operation obj =new Operation();
-		//name starts with 'S'
-//		obj.nameS(list);
-//		//salary greater than 100000
-//		obj.greaterSal(list);
-//		//parallelStream list of employee in hyderabad
-//		obj.hyderabad(list);
+//		name starts with 'S'
+		obj.nameS(list);
+		//salary greater than 100000
+		obj.greaterSal(list);
+//		parallelStream list of employee in hyderabad
+		obj.hyderabad(list);
 		//Location and employees
 		obj.finder(list);
-		 
-		 
-//		for(Employee l:list)
-//			System.out.println(l);
+		//sort by name and Location
+		obj.sort(list);
 	}
 
 }
