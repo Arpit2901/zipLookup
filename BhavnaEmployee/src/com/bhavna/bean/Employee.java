@@ -10,6 +10,12 @@ public class Employee {
 		this.salary = salary;
 		Location = location;
 	}
+	
+	@Override
+	public String toString() {
+		return " [name=" + name + ", salary=" + salary + ", Location=" + Location + "]\n";
+	}
+
 	public String getName() {
 		return name;
 	}
@@ -27,6 +33,5 @@ public class Employee {
 	}
 	public void setLocation(String location) {
 		Location = location;
-	}
-	
+	}	
 }

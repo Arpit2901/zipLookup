@@ -6,11 +6,14 @@ import java.util.Map;
 
 public class ZipServicev2 extends ZipServicev1 {
 	HashMap<Long, address> hm = new HashMap<Long, address>();
-	{
+	static{
 		address data = new address("India", "Maharashtra", "pune", 200011);
 		address data2 = new address("India", "Uttarpradesh", "Ghaziabad", 200014);
 		address data3 = new address("India", "Bihar", "patna", 200012);
 		address data4 = new address("India", "Assam", "guhati", 200013);
+		
+	}
+	{
 		hm.put((long) 200011, data);
 		hm.put((long) 200014, data2);
 		hm.put((long) 200012, data3);
