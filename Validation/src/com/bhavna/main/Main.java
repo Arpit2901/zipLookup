@@ -10,7 +10,7 @@ import com.bhavna.operation.EmployeePunch;
 
 public class Main {
 	public static void main(String args[]) throws Exception {
-		Main obj = new Main();
+		EmployeePunch emp = new EmployeePunch();
 		File file = new File("C:\\Users\\arpit.verma\\eclipse-workspace\\Validation\\src\\a.txt");
 
 		// Creating an object of BufferedReader class
@@ -19,12 +19,8 @@ public class Main {
 		// Declaring a string variable
 		String st;
 		while ((st = br.readLine()) != null) {
-			obj.add(st);
+			emp.punchIn(st,true);
 		}
-	}
-
-	public void add(String st) {
-		EmployeePunch emp = new EmployeePunch();
-		emp.punchIn(st);
+		emp.punchIn(null, false);
 	}
 }
