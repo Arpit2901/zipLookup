@@ -15,12 +15,12 @@ public class Main {
 
 		// Creating an object of BufferedReader class
 		BufferedReader br = new BufferedReader(new FileReader(file));
-
 		// Declaring a string variable
 		String st;
 		while ((st = br.readLine()) != null) {
-			emp.punchIn(st,true);
+			emp.check(st);
 		}
-		emp.punchIn(null, false);
+		emp.display();
+		
 	}
 }
