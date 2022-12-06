@@ -37,4 +37,15 @@ public class Service {
 		obj.insertDepData(dep);
 
 	}
+	public void updateEmpData() throws ParseException {
+		System.out.println("enter the emp id which needs to be updated");
+		int id=sc.nextInt();
+		System.out.println("enter the emp name,salaryand new doj");
+		String name=sc.next();
+		Double salary=sc.nextDouble();
+		String sDate = sc.next();
+		java.util.Date date1=new SimpleDateFormat("yyyy-mm-dd").parse(sDate);
+		java.sql.Date date = new java.sql.Date(date1.getTime());
+		obj.updateEmployeeData(new Employee(id,name,salary,date));
+	}
 }

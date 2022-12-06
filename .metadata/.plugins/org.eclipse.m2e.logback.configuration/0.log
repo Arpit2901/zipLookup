@@ -6667,3 +6667,8 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: only whites
 2022-12-05 16:03:26,099 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\arpit.verma\eclipse-workspace\DemoWebappSpring\src\main\resources
 2022-12-05 16:03:26,101 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-12-05 16:03:26,101 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\arpit.verma\eclipse-workspace\DemoWebappSpring\src\test\resources
+2022-12-06 11:59:12,376 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-12-06 12:00:39,447 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-06 12:00:39,450 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\arpit.verma\eclipse-workspace\DemoWebappSpring\src\main\resources
+2022-12-06 12:00:39,452 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-06 12:00:39,452 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\arpit.verma\eclipse-workspace\DemoWebappSpring\src\test\resources

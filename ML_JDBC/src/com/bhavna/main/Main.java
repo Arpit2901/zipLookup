@@ -12,9 +12,17 @@ public class Main {
 		
 		Operations obj=new Operations();
 		obj.fetchData();
+		//save emp and dep tables
 		Service sev=new Service();
 //		sev.inputEmp();
-		sev.inputDep();
+//		sev.inputDep();
+		//update emp table
+		sev.updateEmpData();
+		//employees whose salry is greter then 30k
+//		obj.employeesAbove30K();
+		
+		
+		
 	
 		
 		
