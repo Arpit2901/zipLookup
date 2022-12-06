@@ -40,7 +40,7 @@ public class EmployeePunch {
 		}
 	}
 
-	public void addToMap(String name, String dateTime) {
+	public void addToMap(String name, String dateTime) throws InvalidNameException {
 		EmployeeEntry emp = new EmployeeEntry(name, dateTime);
 		Pattern pattern = Pattern.compile("^\\d{2}.\\d{2}\\s\\d.[0-9]\\d{2}AM|PM$");
 		Matcher matcher = pattern.matcher(dateTime);
@@ -52,6 +52,7 @@ public class EmployeePunch {
 			} else {
 				failure.put(name, new ArrayList<EmployeeEntry>());
 				failure.get(name).add(emp);
+				throw new InvalidNameException(" inCorrect entry"+name);
 			}
 		} else {
 			if (found) {
@@ -60,6 +61,7 @@ public class EmployeePunch {
 			} else {
 				failure.put(name, new ArrayList<EmployeeEntry>());
 				failure.get(name).add(emp);
+				throw new InvalidNameException(" inCorrect entry "+name);
 			}
 		}
 	}

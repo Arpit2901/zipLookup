@@ -1,18 +1,24 @@
 package com.bhavna.main;
 
-import java.rmi.server.Operation;
+import java.text.ParseException;
 
 import com.bhavna.dao.Operations;
-import com.bhavna.utility.MyConnection;
+import com.bhavna.service.Service;
+
 
 public class Main {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public static void main(String[] args) throws ParseException {
 		
-		MyConnection.getConnection();
 		Operations obj=new Operations();
 		obj.fetchData();
+		Service sev=new Service();
+//		sev.inputEmp();
+		sev.inputDep();
+	
+		
+		
+		
 		
 	}
 

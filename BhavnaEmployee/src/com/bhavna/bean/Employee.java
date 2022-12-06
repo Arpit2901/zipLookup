@@ -3,17 +3,17 @@ package com.bhavna.bean;
 public class Employee {
 	private String name;
 	private long salary;
-	private String Location;
+	private String location;//
 	public Employee(String name, long salary, String location) {
 		super();
 		this.name = name;
 		this.salary = salary;
-		Location = location;
+		this.location = location;
 	}
 	
 	@Override
 	public String toString() {
-		return " [name=" + name + ", salary=" + salary + ", Location=" + Location + "]\n";
+		return " [name=" + name + ", salary=" + salary + ", location=" + location + "]\n";
 	}
 
 	public String getName() {
@@ -29,9 +29,9 @@ public class Employee {
 		this.salary = salary;
 	}
 	public String getLocation() {
-		return Location;
+		return location;
 	}
 	public void setLocation(String location) {
-		Location = location;
+		this.location = location;
 	}	
 }
