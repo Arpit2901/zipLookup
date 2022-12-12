@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1"
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <display-name>Archetype Created Web Application</display-name>
+ <welcome-file-list>
+        <welcome-file>/WEB-INF/views/viewemp.jsp</welcome-file>
+    </welcome-file-list>
+	<servlet>
+		<servlet-name>serveer</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet
+		</servlet-class>
+		
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>serveer</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+</web-app>

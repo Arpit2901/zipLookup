@@ -68,7 +68,6 @@ public class Operations {
 		try {
 			Connection con=MyConnection.getConnection();
 			String query="update employee set employeeName=?, joiningDate=?,employeeSalry=? where employeeID=?";
-			
 			PreparedStatement pstmnt=con.prepareStatement(query);
 			pstmnt.setString(1, emp.getEmployeeName());
 			pstmnt.setDate(2, emp.getJoiningDate());

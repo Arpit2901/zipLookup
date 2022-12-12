@@ -14,7 +14,7 @@ public class Main {
 		obj.fetchData();
 		//save emp and dep tables
 		Service sev=new Service();
-//		sev.inputEmp();
+		sev.inputEmp();
 //		sev.inputDep();
 		//update emp table
 		sev.updateEmpData();

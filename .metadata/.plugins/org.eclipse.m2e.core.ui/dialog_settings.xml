@@ -18,6 +18,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\arpit.verma\eclipse-workspace\SpringWithMaven5\src\main\webapp\WEB-INF\views\index2.jsp"/>
 			<item value="C:\Users\arpit.verma\eclipse-workspace\SpringMVC22"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -42,10 +43,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.bhavna"/>
 		</list>
 		<list key="groupId">
+			<item value="com.bhavna"/>
 		</list>
 		<list key="artifactId">
+			<item value="bhavnaMvc5"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -61,14 +65,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.demo.springboot"/>
-			<item value="com.hibernate.bean"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="SpringbootDemo"/>
-			<item value="JPQLHQL"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
