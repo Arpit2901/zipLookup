@@ -17,7 +17,7 @@ public class Main {
 		sev.inputEmp();
 //		sev.inputDep();
 		//update emp table
-		sev.updateEmpData();
+//		sev.updateEmpData();
 		//employees whose salry is greter then 30k
 //		obj.employeesAbove30K();
 		

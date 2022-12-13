@@ -95,4 +95,7 @@ public class Operations {
         	e.printStackTrace();
         }
 	}
+//	public void empByID() {
+//		select 
+//	}
 }

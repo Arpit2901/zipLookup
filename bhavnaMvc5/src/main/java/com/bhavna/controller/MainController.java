@@ -20,12 +20,12 @@ public class MainController {
 	@Autowired
 	EmployeeDao employeeDao;
 
-	@RequestMapping("/id")
+	@RequestMapping("/welcome")
 	public String home() {
 		return "index2";
 	}
 
-	@RequestMapping(value = "/save", method = RequestMethod.POST)
+	@RequestMapping(value = "/getActiveEmployee", method = RequestMethod.POST)
 	public String saveEmployee(@ModelAttribute EmployeeRecord employee) {
 		employeeDao.save(employee);
 		return "redirect:/viewemp";
