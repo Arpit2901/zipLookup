@@ -1,0 +1,1 @@
+<EmployeeRecord><employeeId>904</employeeId><employeeName>Shreesh</employeeName><employeeSalary>450089.0</employeeSalary><joiningDate>2022-11-10</joiningDate><deptId>1002</deptId><deptName>Meridian</deptName><status>Active</status></EmployeeRecord>
