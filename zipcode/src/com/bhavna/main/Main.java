@@ -1,4 +1,5 @@
 package com.bhavna.main;
+
 import java.util.Scanner;
 
 import com.bhavna.model.ZipServicev1;
@@ -7,8 +8,8 @@ import com.bhavna.service.ServiceLayer;
 public class Main {
 
 	public static void main(String[] args) {
-		ServiceLayer layer=new ServiceLayer();
-		ZipServicev1 obj=layer.getObject();// create a service class//upcasting
+		ServiceLayer layer = new ServiceLayer();
+		ZipServicev1 obj = layer.getObject();// create a service class//upcasting//dynamic method dispatch
 		int choice = 1;
 		long code = 0;
 		Scanner sc = new Scanner(System.in);

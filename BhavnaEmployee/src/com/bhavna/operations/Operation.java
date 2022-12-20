@@ -7,30 +7,33 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 import com.bhavna.bean.Employee;
+
 //employyee declaration
 public class Operation {
 	public void nameS(List<Employee> l) {
-		List<Employee> result =  l.stream().filter(s -> (s).getName().startsWith("S"))
-				.collect(Collectors.toList());
+		List<Employee> result = l.stream().filter(s -> (s).getName().startsWith("S")).collect(Collectors.toList());
 		System.out.println(result);
+		System.out.println();
 	}
 
 	public void greaterSal(List<Employee> l) {
 		List<Employee> result = l.stream().filter(s -> s.getSalary() > 100000).collect(Collectors.toList());
 		System.out.println(result);
+		System.out.println();
 	}
 
 	public void hyderabad(List<Employee> l) {
 		List<Employee> result = l.parallelStream().filter(s -> s.getLocation().equalsIgnoreCase("Hyderabad"))
 				.collect(Collectors.toList());
 		System.out.println(result);
+		System.out.println();
 
 	}
 
 	public void finder(List<Employee> l) {
-		Map<String, List<Employee>> map = l.stream()
-				.collect(Collectors.groupingBy(Employee::getLocation));
+		Map<String, List<Employee>> map = l.stream().collect(Collectors.groupingBy(Employee::getLocation));
 		System.out.println("Based on Location: " + map);
+		System.out.println();
 
 	}
 

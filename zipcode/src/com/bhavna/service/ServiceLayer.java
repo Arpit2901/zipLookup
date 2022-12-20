@@ -5,7 +5,7 @@ import com.bhavna.model.ZipServicev2;
 
 public class ServiceLayer {
 	public ServiceLayer() {
-		super();
+		
 	}
 	public ZipServicev1 getObject() {
 		return new ZipServicev2();

@@ -10,6 +10,7 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCallback;
 import org.springframework.jdbc.core.RowMapper;
+
 import com.bhavna.bean.EmployeeRecord;
 
 public class EmployeeDao {
@@ -21,7 +22,7 @@ public class EmployeeDao {
 		this.template = template;
 	}
 
-	public Boolean save(EmployeeRecord employee) {
+	public Boolean save( final EmployeeRecord employee) {
 		String query = "insert into employeerecord values(?,?,?,?,?,?,?)";
 		return template.execute(query, new PreparedStatementCallback<Boolean>() {
 			@Override
@@ -43,19 +44,7 @@ public class EmployeeDao {
 	}
 
 	public List<EmployeeRecord> getEmployee() {
-//		return template.query("select * from employeerecord", new RowMapper<EmployeeRecord>() {
-			return  template.query("select * from employeerecord",new Object[] {},(ResultSet resultSet, int row)->{ 
-				EmployeeRecord emp = new EmployeeRecord();
-				emp.setEmployeeId(resultSet.getInt(1));
-				emp.setEmployeeName(resultSet.getString(2));
-				emp.setEmployeeSalary(resultSet.getDouble(3));
-				emp.setJoiningDate(resultSet.getString(4));
-				emp.setDeptId(resultSet.getInt(5));
-				emp.setDeptName(resultSet.getString(6));
-				emp.setStatus(resultSet.getString(7));
-				return emp;
-			});
-//			public EmployeeRecord mapRow(ResultSet resultSet, int row) throws SQLException {
+//			return  template.query("select * from employeerecord",new Object[] {},(ResultSet resultSet, int row)->{ 
 //				EmployeeRecord emp = new EmployeeRecord();
 //				emp.setEmployeeId(resultSet.getInt(1));
 //				emp.setEmployeeName(resultSet.getString(2));
@@ -65,9 +54,23 @@ public class EmployeeDao {
 //				emp.setDeptName(resultSet.getString(6));
 //				emp.setStatus(resultSet.getString(7));
 //				return emp;
+//			});
+		return template.query("select * from employeerecord", new RowMapper<EmployeeRecord>() {
+			public EmployeeRecord mapRow(ResultSet resultSet, int row) throws SQLException {
+				EmployeeRecord emp = new EmployeeRecord();
+				emp.setEmployeeId(resultSet.getInt(1));
+				emp.setEmployeeName(resultSet.getString(2));
+				emp.setEmployeeSalary(resultSet.getDouble(3));
+				emp.setJoiningDate(resultSet.getString(4));
+				emp.setDeptId(resultSet.getInt(5));
+				emp.setDeptName(resultSet.getString(6));
+				emp.setStatus(resultSet.getString(7));
+				System.out.println(emp+"45678");
+				return emp;
 			}
-	
-	
+//			
+			});
+		}
 
 	  public EmployeeRecord getEmpById(int id){   
 		  String sql = "SELECT * FROM employeerecord WHERE employeeid=" + id;

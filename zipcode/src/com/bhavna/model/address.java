@@ -6,14 +6,14 @@ private String area;
 private long zipCode;
 
 public address(String country, String state, String area, long zipCode) {
-	super();
+//	super();
 	this.country = country;
 	this.state = state;
 	this.area = area;
 	this.zipCode = zipCode;
 }
 
-@Override
+//@Override
 public String toString() {
 	return "[country=" + country + ", state=" + state + ", area=" + area + ", zipCode=" + zipCode + "]";
 }
