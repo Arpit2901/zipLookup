@@ -7,8 +7,8 @@
   <ns1:parameter name="dotNetSoapEncFix" value="true"/>
   <ns1:parameter name="enableNamespacePrefixOptimization" value="false"/>
   <ns1:parameter name="sendXMLDeclaration" value="true"/>
-  <ns1:parameter name="sendXsiTypes" value="true"/>
   <ns1:parameter name="attachments.implementation" value="org.apache.axis.attachments.AttachmentsImpl"/>
+  <ns1:parameter name="sendXsiTypes" value="true"/>
   <ns1:requestFlow>
    <ns1:handler type="java:org.apache.axis.handlers.JWSHandler">
     <ns1:parameter name="scope" value="session"/>
@@ -33,15 +33,15 @@
   <ns1:parameter name="className" value="org.apache.axis.Version"/>
  </ns1:service>
  <ns1:service name="ServiceImpl" provider="java:RPC" style="wrapped" use="literal">
-  <ns2:operation name="addPerson" qname="ns1:addPerson" returnQName="ns1:addPersonReturn" returnType="xsd:boolean" soapAction="" xmlns:ns1="http://service.bhavna.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://xml.apache.org/axis/wsdd/">
-   <ns3:parameter qname="ns1:p" type="ns2:Person" xmlns:ns2="http://bean.bhavna.com" xmlns:ns3="http://xml.apache.org/axis/wsdd/"/>
-  </ns2:operation>
+  <ns3:operation name="getAllPersons" qname="ns1:getAllPersons" returnQName="ns1:getAllPersonsReturn" returnType="ns2:Person" soapAction="" xmlns:ns1="http://service.bhavna.com" xmlns:ns2="http://bean.bhavna.com" xmlns:ns3="http://xml.apache.org/axis/wsdd/"/>
   <ns1:operation name="deletePerson" qname="ns3:deletePerson" returnQName="ns3:deletePersonReturn" returnType="xsd:boolean" soapAction="" xmlns:ns3="http://service.bhavna.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
    <ns1:parameter qname="ns3:id" type="xsd:int"/>
   </ns1:operation>
-  <ns1:operation name="getAllPersons" qname="ns4:getAllPersons" returnQName="ns4:getAllPersonsReturn" returnType="ns5:Person" soapAction="" xmlns:ns4="http://service.bhavna.com" xmlns:ns5="http://bean.bhavna.com"/>
-  <ns1:operation name="getPerson" qname="ns6:getPerson" returnQName="ns6:getPersonReturn" returnType="ns7:Person" soapAction="" xmlns:ns6="http://service.bhavna.com" xmlns:ns7="http://bean.bhavna.com">
-   <ns1:parameter qname="ns6:id" type="xsd:int" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="getPerson" qname="ns4:getPerson" returnQName="ns4:getPersonReturn" returnType="ns5:Person" soapAction="" xmlns:ns4="http://service.bhavna.com" xmlns:ns5="http://bean.bhavna.com">
+   <ns1:parameter qname="ns4:id" type="xsd:int" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  </ns1:operation>
+  <ns1:operation name="addPerson" qname="ns6:addPerson" returnQName="ns6:addPersonReturn" returnType="xsd:boolean" soapAction="" xmlns:ns6="http://service.bhavna.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns6:p" type="ns7:Person" xmlns:ns7="http://bean.bhavna.com"/>
   </ns1:operation>
   <ns1:parameter name="allowedMethods" value="deletePerson getPerson getAllPersons addPerson"/>
   <ns1:parameter name="typeMappingVersion" value="1.2"/>

@@ -3,7 +3,7 @@ package com.bhavna.bean;
 public class Employee {
 	private String name;
 	private long salary;
-	private String location;//
+	private String location;
 	public Employee(String name, long salary, String location) {
 		super();
 		this.name = name;

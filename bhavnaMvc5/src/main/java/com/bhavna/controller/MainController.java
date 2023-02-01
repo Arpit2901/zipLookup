@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -29,7 +30,7 @@ public class MainController {
 	}
 
 	@RequestMapping(value = "/getActiveEmployee", method = RequestMethod.POST)
-	public String saveEmployee(@ModelAttribute EmployeeRecord employee) {
+	public String saveEmployee(@RequestBody EmployeeRecord employee) {
 		employeeDao.save(employee);
 		return "redirect:/viewemp";//in xml format
 	}

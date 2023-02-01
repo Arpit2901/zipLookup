@@ -39,10 +39,10 @@ public class Operation {
 
 	public void sort(List<Employee> l) {
 		// sorting by Location
-		Collections.sort(l, (p1, p2) -> (p1).getLocation().compareTo(((Employee) p2).getLocation()));
+		Collections.sort(l, (p1, p2) -> (p1).getLocation().compareTo((p2).getLocation()));
 
 //	Sorting  by Name
-		Collections.sort(l, (p1, p2) -> (p1).getName().compareTo(((Employee) p2).getName()));
+		Collections.sort(l, (p1, p2) -> (p1).getName().compareTo((p2).getName()));
 		System.out.println(l);
 	}
 }

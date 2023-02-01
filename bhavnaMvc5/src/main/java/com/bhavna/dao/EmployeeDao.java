@@ -22,7 +22,7 @@ public class EmployeeDao {
 		this.template = template;
 	}
 
-	public Boolean save( final EmployeeRecord employee) {
+	public Boolean save(EmployeeRecord employee) {
 		String query = "insert into employeerecord values(?,?,?,?,?,?,?)";
 		return template.execute(query, new PreparedStatementCallback<Boolean>() {
 			@Override
@@ -67,8 +67,7 @@ public class EmployeeDao {
 				emp.setStatus(resultSet.getString(7));
 				System.out.println(emp+"45678");
 				return emp;
-			}
-//			
+			}	
 			});
 		}
 

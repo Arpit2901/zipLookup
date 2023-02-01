@@ -5,17 +5,13 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
  <wsdl:types>
   <schema elementFormDefault="qualified" targetNamespace="http://service.bhavna.com" xmlns="http://www.w3.org/2001/XMLSchema">
    <import namespace="http://bean.bhavna.com"/>
-   <element name="addPerson">
-    <complexType>
-     <sequence>
-      <element name="p" type="tns1:Person"/>
-     </sequence>
-    </complexType>
+   <element name="getAllPersons">
+    <complexType/>
    </element>
-   <element name="addPersonResponse">
+   <element name="getAllPersonsResponse">
     <complexType>
      <sequence>
-      <element name="addPersonReturn" type="xsd:boolean"/>
+      <element maxOccurs="unbounded" name="getAllPersonsReturn" type="tns1:Person"/>
      </sequence>
     </complexType>
    </element>
@@ -33,16 +29,6 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
      </sequence>
     </complexType>
    </element>
-   <element name="getAllPersons">
-    <complexType/>
-   </element>
-   <element name="getAllPersonsResponse">
-    <complexType>
-     <sequence>
-      <element maxOccurs="unbounded" name="getAllPersonsReturn" type="tns1:Person"/>
-     </sequence>
-    </complexType>
-   </element>
    <element name="getPerson">
     <complexType>
      <sequence>
@@ -54,6 +40,20 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
     <complexType>
      <sequence>
       <element name="getPersonReturn" type="tns1:Person"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="addPerson">
+    <complexType>
+     <sequence>
+      <element name="p" type="tns1:Person"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="addPersonResponse">
+    <complexType>
+     <sequence>
+      <element name="addPersonReturn" type="xsd:boolean"/>
      </sequence>
     </complexType>
    </element>
@@ -77,17 +77,17 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
 
    </wsdl:message>
 
-   <wsdl:message name="addPersonRequest">
+   <wsdl:message name="getPersonResponse">
 
-      <wsdl:part element="impl:addPerson" name="parameters">
+      <wsdl:part element="impl:getPersonResponse" name="parameters">
 
       </wsdl:part>
 
    </wsdl:message>
 
-   <wsdl:message name="getPersonResponse">
+   <wsdl:message name="addPersonRequest">
 
-      <wsdl:part element="impl:getPersonResponse" name="parameters">
+      <wsdl:part element="impl:addPerson" name="parameters">
 
       </wsdl:part>
 
@@ -135,13 +135,13 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
 
    <wsdl:portType name="ServiceImpl">
 
-      <wsdl:operation name="addPerson">
+      <wsdl:operation name="getAllPersons">
 
-         <wsdl:input message="impl:addPersonRequest" name="addPersonRequest">
+         <wsdl:input message="impl:getAllPersonsRequest" name="getAllPersonsRequest">
 
        </wsdl:input>
 
-         <wsdl:output message="impl:addPersonResponse" name="addPersonResponse">
+         <wsdl:output message="impl:getAllPersonsResponse" name="getAllPersonsResponse">
 
        </wsdl:output>
 
@@ -159,18 +159,6 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
 
       </wsdl:operation>
 
-      <wsdl:operation name="getAllPersons">
-
-         <wsdl:input message="impl:getAllPersonsRequest" name="getAllPersonsRequest">
-
-       </wsdl:input>
-
-         <wsdl:output message="impl:getAllPersonsResponse" name="getAllPersonsResponse">
-
-       </wsdl:output>
-
-      </wsdl:operation>
-
       <wsdl:operation name="getPerson">
 
          <wsdl:input message="impl:getPersonRequest" name="getPersonRequest">
@@ -183,23 +171,35 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
 
       </wsdl:operation>
 
+      <wsdl:operation name="addPerson">
+
+         <wsdl:input message="impl:addPersonRequest" name="addPersonRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:addPersonResponse" name="addPersonResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
    </wsdl:portType>
 
    <wsdl:binding name="ServiceImplSoapBinding" type="impl:ServiceImpl">
 
       <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
 
-      <wsdl:operation name="addPerson">
+      <wsdl:operation name="getAllPersons">
 
          <wsdlsoap:operation soapAction=""/>
 
-         <wsdl:input name="addPersonRequest">
+         <wsdl:input name="getAllPersonsRequest">
 
             <wsdlsoap:body use="literal"/>
 
          </wsdl:input>
 
-         <wsdl:output name="addPersonResponse">
+         <wsdl:output name="getAllPersonsResponse">
 
             <wsdlsoap:body use="literal"/>
 
@@ -225,24 +225,6 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
 
       </wsdl:operation>
 
-      <wsdl:operation name="getAllPersons">
-
-         <wsdlsoap:operation soapAction=""/>
-
-         <wsdl:input name="getAllPersonsRequest">
-
-            <wsdlsoap:body use="literal"/>
-
-         </wsdl:input>
-
-         <wsdl:output name="getAllPersonsResponse">
-
-            <wsdlsoap:body use="literal"/>
-
-         </wsdl:output>
-
-      </wsdl:operation>
-
       <wsdl:operation name="getPerson">
 
          <wsdlsoap:operation soapAction=""/>
@@ -261,13 +243,31 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
 
       </wsdl:operation>
 
+      <wsdl:operation name="addPerson">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="addPersonRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="addPersonResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
    </wsdl:binding>
 
    <wsdl:service name="ServiceImplService">
 
       <wsdl:port binding="impl:ServiceImplSoapBinding" name="ServiceImpl">
 
-         <wsdlsoap:address location="http://localhost:8080/SoapUIService/services/ServiceImpl"/>
+         <wsdlsoap:address location="http://localhost:8082/SoapUIService/services/ServiceImpl"/>
 
       </wsdl:port>
 
